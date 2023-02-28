@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+  }
+  /* 2 Notre body */
+  body {
+    padding: 20px;
+    margin: 0px;
+    font-family: 'segoe ui';
+    background-color: rgb(236, 236, 150);
+  }
+
+  /* 3 notre navbar */
+  .nav {
+    height: 120px;
+    width: 100%;
+    padding: 35px;
+    background-color: #1a0817;
+    position: relative;
+    margin: auto;
+  }
+  .nav > .nav-header {
+    display: inline;
+  }
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #fff;
+    /* padding: 20px 100px 10px 10px; */
+  }
+  .nav > .nav-btn {
+    display: none;
+  }
+
+
+
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+
+
+  .lubumbashi h1{
+    font-size: 120px;
+    color: #000000;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+.golf{
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  /* border: #1a0817 1px solid; */
+}
+
+.battant{
+  width: 30%;
+  justify-content: center;
+  text-align: center;
+}
+.battant img{
+  width: 54%;
+  height: 456px;
+  border: #fcfafa 2px solid;
+  border-radius: 50%;
+}
+.battant h2{
+    font-weight: bold;
+    font-size: 48px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .battant p{
+    font-size: 36px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+.malela{
+  width: 30%;
+  /* border: #ffffff 1px solid; */
+  justify-content: center;
+  text-align: center;
+}
+.malela img{
+  width: 54%;
+  height: 456px;
+  border: #fcfafa 2px solid;
+  border-radius: 50%;
+}
+
+.malela h2{
+  font-weight: bold;
+  font-size: 48px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.malela p{
+  font-size: 36px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.kabulameshi{
+  width: 30%;
+  /* border: #ffffff 1px solid; */
+  justify-content: center;
+  text-align: center;
+}
+  .kabulameshi img{
+    width: 54%;
+    height: 456px;
+    border: #fcfafa 2px solid;
+    border-radius: 50%;
+  }
+
+  .kabulameshi h2{
+    font-weight: bold;
+    font-size: 48px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .kabulameshi p{
+
+    font-size: 36px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+
+  @media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  } 

@@ -1,0 +1,207 @@
+* {
+    box-sizing: border-box;
+  }
+  /* 2 Notre body */
+  body {
+    padding: 20px;
+    margin: 0px;
+    font-family: 'segoe ui';
+    background-color: rgb(236, 236, 150);
+  }
+
+  /* 3 notre navbar */
+  .nav {
+    height: 120px;
+    width: 100%;
+    padding: 35px;
+    background-color: #1a0817;
+    position: relative;
+    margin: auto;
+  }
+  .nav > .nav-header {
+    display: inline;
+  }
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #fff;
+    /* padding: 20px 100px 10px 10px; */
+  }
+  .nav > .nav-btn {
+    display: none;
+  }
+
+
+
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+
+  /* 7 Notre style formulaire */
+  /* Style formulaire suite */
+  .contactez-nous {
+   margin: auto;
+   margin-top: 20px;
+   width: 1200px;
+   /* border: 1px solid;
+   border-radius: 8px; */
+   padding: 240px 0 50px 0 50px;
+   /* background: #ffffff  */
+   }
+   
+   .contactez-nous > h1 {
+   font-weight: bold;
+   font-size: 64px;
+   }
+   
+   .contactez-nous > p {
+   font-size: 28px;
+   }
+   form div {
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     min-height: 83px;
+     margin-top: 25px;
+     }
+     
+     form div > label {
+     margin-bottom: 10px;
+     font-size: 36px;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     }
+     
+     .noscontacts{
+       display: flex;
+     }
+     form div > input, form div > select, form div > textarea {
+     background: #fefefe;
+     border: none;
+     border-radius: 5px;
+     font-size: 24px;
+     font-weight: 500;
+     font-family: Montserrat, "sans-serif";
+     box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.25);
+     }
+     
+     form div > input, form div > select {
+     height: 80px;
+     padding-left: 20px;
+     }
+     
+     form div > select {
+     appearance: none;
+     background-size: 15px;
+     background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDIxMy4zMzMgMjEzLjMzMyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGc+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8Zz4KCQk8cG9seWdvbiBwb2ludHM9IjAsNTMuMzMzIDEwNi42NjcsMTYwIDIxMy4zMzMsNTMuMzMzICAgIiBmaWxsPSIjMzAzMDMwIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BvbHlnb24+Cgk8L2c+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPC9nPjwvc3ZnPg==');
+     background-position: right 10px top 50%;
+     background-repeat: no-repeat;
+     }
+     
+     form div > textarea {
+     height: 195px;
+     padding: 15px 0px 0px 10px;
+     }
+     
+     form div > input::placeholder, form div > textarea::placeholder {
+     color: white;
+     }
+     
+     form div > select:invalid {
+     color: white;
+     }
+     
+     form div > select option {
+     background: white;
+     color: #303030;
+     }
+     
+     form div:last-child {
+     align-items:center;
+     margin-top: 20px;
+     }
+     
+     form button {
+     width: 300px;
+     max-width: 500px;
+     height: 80px;
+     font-weight: 700;
+     margin-left: -900px;
+     font-size: 28px;
+     background: white;
+     border: rgba(48, 48, 48, 0.5) solid 1px;
+     border-radius: 15px;
+     box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+     color: #000000;
+     }
+ 
+ 
+ 
+ 
+   
+
+
+  
+  @media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  } 
