@@ -1,499 +1,396 @@
 * {
-    box-sizing: border-box;
-  }
-  /* 2 Notre body */
-  body {
-    padding: 20px;
-    margin: 0px;
-    font-family: 'segoe ui';
-    background-color: rgb(236, 236, 150);
-  }
+  box-sizing: border-box;
+}
+/* 2 Notre body */
+body {
+  padding: 5px;
+  margin: 0px;
+  font-family: 'segoe ui';
+  background-color: rgb(255, 255, 255);
+}
+/* 3 notre navbar */
+.nav {
+  height: 120px;
+  width: 100%;
+  padding: 35px;
+  background-color: #1a0817;
+  position: relative;
+  margin: auto;
+}
+.nav > .nav-header {
+  display: inline;
+}
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #fff;
+  /* padding: 20px 100px 10px 10px; */
+}
+.nav > .nav-btn {
+  display: none;
+}
 
-  /* 3 notre navbar */
-  .nav {
-    height: 120px;
-    width: 100%;
-    padding: 35px;
-    background-color: #1a0817;
-    position: relative;
-    margin: auto;
-  }
-  .nav > .nav-header {
-    display: inline;
-  }
-  .nav > .nav-header > .nav-title {
-    display: inline-block;
-    font-size: 40px;
-    font-weight: bold;
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+
+.a{
+  color:#f9398c;
+  text-decoration:none;
+}
+
+a:hover,a:focus{
+  color:#f9398c;
+  text-decoration:underline
+}
+
+a:focus,
+.btn:focus {
+  outline: none;
+}
+
+.img-responsive {
+    border: 1px solid #ddd;
+}
+
+/*-----------------------
+----- Typo Styles ------
+-------------------------*/
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
+  font-weight:300;
+}
+
+.big-text{
+    font-size:38px;
+    font-weight:200;
+    line-height:62px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #fff;
-    /* padding: 20px 100px 10px 10px; */
-  }
-  .nav > .nav-btn {
-    display: none;
-  }
-  /* 4 Notre style hearder ici est appeler 
-  Generique et celui le Parent de photo et descri*/
-  .generique{
-    background-image: url("img/ecouter.jpg") ;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 1200px;
-    border: rgb(248, 247, 247) solid 1px;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-  }
-  .photo img{
-    margin-top: -78px;
-    padding: 0px;
-    width: 150%;
-  }
-/* description nom et paragraphe sur john */
+    letter-spacing:0.01em;
+    word-spacing: 0.15em;
+    text-transform:uppercase;
+}
+
+.section-title{
+    margin-top:-20px;
+    margin-bottom: 80px;
+    text-align:center;
+}
+
+/*-----------------------
+----- Layout Styles -----
+-------------------------*/
+
+.add-padding {
+    padding-top:50px;
+    padding-bottom:50px;
+}
+/* ----------------------
+----Photo style-----
+------------------------ */
+
+.photo img{
+  /* border: #1a0817 1px solid; */
+  width: 150%;
+  height: 1028px;
+}
+/* ----------------------
+----paragraphe voirplus-----
+------------------------ */
+.voirplus{
+  /* border: #1a0817 1px solid; */
+  width: 100%;
+  padding: 12px;
+  margin-top: -5%;
+}
+
+.voirplus p{
+  color: #ffffff;
+  font-size: 48px;
+  text-decoration: darkgrey;
+  width: 60%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.descri h2{
+  margin-top: 20px;
+  font-size: 48px;
+  width: 60%;
+  /* border: #1a0817 1px solid; */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.descri h1{
+  margin-top: -60px;
+  font-size: 120px;
+  width: 60%;
+  /* border: #1a0817 1px solid; */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+/* ----------------------
+----paragraphe insiste-----
+------------------------ */
+.insiste{
+  /* border: #1a0817 1px solid; */
+  width: 80%;
+  margin-left: 30% ;
+  margin-top: -5%;
+  padding-left: 30%;
+  padding: 20px;
+}
+
+/* ----------------------
+----Paragraphe insite style -----
+------------------------ */
+
+.insiste p{
+  font-size: 48px;
+  width: 60%;
+  margin-left: 30px;
+  color: #faf9fa;
+font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* ----------------------
+----description-----
+------------------------ */
 
 .descri{
-  width: 40%;
-  color: #eee;
-  padding-top: 200px; 
-
-}
-.descri h1{
-  color: #fbf7fa;
-  font-size: 100px ;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  margin-top: -54px;
-  /* margin-left: 0px; */
-}
-.descri h2{
-  font-size: 45px ;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  margin-left: 20px;
-}
-.descri p{
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  width: 90%;
-  font-size: 40px ;
-  margin: -30px 10px;
-  gap: 40px;
-}
-.descri p a{
-  font-weight: bold;
-  color: #060606;
-}
-.para p{
-  margin-bottom: 60px;
-  margin-left: 100px;
-}
-/* <!-- partie Expérience --> */
-.lubumbashi{
-  width: 90%;
-  height: 780px;
-  margin: auto;
-  border: #c9a507 solid 2px;
-  background-color: #fdfbfd;
-}
-/* .lubumbashi h1{
-  font-size: 120px;
-  color: #c9a507;
-  text-align: center;
-} */
-.golf{
-  gap: 6px;
-  display: flex;
-  justify-content: center;
-  width: 90%;
-  height: 700px;
-  color: #eee;
-  background-color: #c9a507;
-  margin: auto;
- 
-}
-.golf h2{
-  font-size: 36px;
-}
-.golf p{
-  font-size: 24px;
-  width: 40%;
-margin: auto;
-  
-}
-/* partie battant */
-.battant{
-  width: 30%;
-  height: 500px;
-  text-align: center;
-  /* border: #070000 1px solid; */
-  margin-top: 100px;
-  text-align: center;
-}
-.battant img{
-  width: 50%;
-  height: 65%;
-  border-radius: 50%;
-}
-/* partie malela */
-.malela{
-  width: 30%;
-  height: 500px;
-  text-align: center;
-  /* border: #070000 1px solid; */
-  margin-top: 100px;
-}
-.malela img{
-  width: 50%;
-  height: 65%;
-  border-radius: 50%;
-}
-
-/* partie kabulameshi */
-.kabulameshi{
-  width: 30%;
-  height: 500px;
-  text-align: center;
-  /* border: #070000 1px solid; */
-  margin-top: 100px;
-}
-.kabulameshi img{
-  width: 50%;
-  height: 65%;
-  border-radius: 50%;
-}
-/* partie skills */
-.skills{
-  padding-top: 600px;
-  width: 81%;
-  height: 240px;
-  background-color: #000207;
-  border: #eeb006 solid 10px;
-  margin: auto;
-  color: #eeb006 ;
-}
-.skills h1{
-  margin-top: -360px;
-  font-size: 100px;
-  text-align: center;
-}
-.kimbwambwa{
+  /* border: #ff03d5 1px solid; */
   width: 100%;
-  height: 300px;
-  color: #030000;
-  text-align: center;
-  display: flex;
-
-}
-.delacolline{
-  width: 20%;
-  height: 100px;
-
-}
-.delacolline img{
-  width: 50%;
-  height: 300px;
-}
-
-.decole{
-  width: 20%;
-  height: 100px;
-
-}
-.decole img{
-  width: 50%;
-  height: 300px;
-}
-
-
-.deglise{
-  width: 20%;
-  height: 100px;
-}
-.deglise img{
-  width: 50%;
-  height: 300px;
-}
-
-.devmobile{
-  width: 20%;
-  height: 100px;
-
-}
-.devmobile img{
-  width:50%;
-  height: 300px;
-}
-.noscontacts{
-  width: 90%;
-}
-.communication{
-  width: 20%;
-  height: 100px;
-}
-.communication img{
-  width:50%;
-  height: 300px;
-}
-.information{
-  width: 50%;
-  border: #000207 solid 1px;
-  margin-top: 300px;
-}
-.information p{
-  margin: 60px;
-  font-size: 34px;
-}
-.footer{
-  width: 100%;
-  height: 120px;
-  background-color: #000207;
-  margin: auto;
-  color: #f8f8f8;
-  text-align: center;
-  padding-top: 40px;
-  font-weight: bold;
-}
-button{
-  width: 240px;
-  height: 100px;
-  border-radius: 30px;
-  background-color: #fcfcfb;
-  margin-left: 800px;
-  color: #000000;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 24px;
-  font-weight: bold;
-}
-  
-  #checkbox {
-    width: 65px;
-    height: 65px;
-    cursor: pointer;
-    appearance: none;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    outline: none;
-    background: rgb(240, 6, 6);
-    position: relative;
-  }
-  #checkbox:hover {
-    background: rgba(240, 6, 6, 0.7);
-  }
-  #checkbox::before {
-    content: '\f1e0';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'font awesome 5 free';
-    font-weight: 700;
-    font-size: 1.5rem;
-    color: rgb(41, 41, 41);
-    transition: all 1.5s;
-  }
-  #checkbox:checked::before {
-    content: '\f00d';
-  }
-  #checkbox:checked ~ .menu {
-    width: 264px; /* 4 * 65 + 4 * 1 pour la bordure */
-  }
-
-  .menu {
-    width: 0;
-     display: flex;
-    overflow: hidden;
-    transition: all .5s;
-  }
-  .menu .menuItems {
-    width: 65px;
-    height: 65px;
-    background: rgb(100, 7, 7);
-    border-left: 1px solid rgb(165, 165, 165);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .menu .menuItems:hover {
-    background: rgba(34, 7, 153, 0.7);
-  }
-
-
-  .menu .menuItems i {
-    font-size: 1.8rem;
-  }
-  .fa-whatsapp {
-    color: #25d366;
-  }
-  .fa-instagram {
-    color: #c32aa3;
-  }
-  .fa-facebook {
-    color: #273c75;
-  }
-  .fa-twitter {
-    color: #1da1f2;
-  }
-
-    7 Notre style formulaire
- /* Style formulaire suite */
- .contactez-nous {
-  margin: auto;
-  margin-top: 300px;
-  width: 30%;
-  border: 1px solid;
-  border-radius: 8px;
-  padding: 240px 0 50px 0 50px;
-  background: #eeb006 
-  }
-  
-  .contactez-nous > h1 {
-  font-weight: 500;
-  }
-  
-  .contactez-nous > p {
+  /* margin-left: 20px; */
+  padding-top: 9%;
+  color: #efefef;
+  text-overflow: clip;
   font-weight: 300;
-  }
-  form div {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    min-height: 83px;
-    margin-top: 25px;
-    }
-    
-    form div > label {
-    margin-bottom: 10px;
-    font-weight: 600;
-    }
-    
-    .noscontacts{
-      display: flex;
-    }
-    form div > input, form div > select, form div > textarea {
-    background: #FFD9D9;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: 500;
-    font-family: Montserrat, "sans-serif";
-    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.25);
-    }
-    
-    form div > input, form div > select {
-    height: 50px;
-    padding-left: 10px;
-    }
-    
-    form div > select {
-    appearance: none;
-    background-size: 15px;
-    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDIxMy4zMzMgMjEzLjMzMyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGc+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8Zz4KCQk8cG9seWdvbiBwb2ludHM9IjAsNTMuMzMzIDEwNi42NjcsMTYwIDIxMy4zMzMsNTMuMzMzICAgIiBmaWxsPSIjMzAzMDMwIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BvbHlnb24+Cgk8L2c+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPC9nPjwvc3ZnPg==');
-    background-position: right 10px top 50%;
-    background-repeat: no-repeat;
-    }
-    
-    form div > textarea {
-    height: 195px;
-    padding: 15px 0px 0px 10px;
-    }
-    
-    form div > input::placeholder, form div > textarea::placeholder {
-    color: white;
-    }
-    
-    form div > select:invalid {
-    color: white;
-    }
-    
-    form div > select option {
-    background: white;
-    color: #303030;
-    }
-    
-    form div:last-child {
-    align-items:center;
-    margin-top: 20px;
-    }
-    
-    form button {
-    width: 450px;
-    max-width: 500px;
-    height: 60px;
-    font-weight: 700;
-    font-size: 28px;
-    background: white;
-    border: rgba(48, 48, 48, 0.5) solid 1px;
-    border-radius: 5px;
-    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
-    color: #303030;
-    }
+}
 
+/* ----------------------
+----Photo generique-----
+------------------------ */
+.generique{
+  display: flex;
+  justify-content: space-between;
+  background-image: url('img/keke3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* ----------------------
+----description-----
+------------------------ */
 
+/*----------------------
+----- Footer Styles ----
+------------------------*/
 
+footer {
+    background: rgb(6, 0, 0);
+    height: 300px;
+    color: #ddd;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    padding: 45px;
+    border-top: #ff03d5;
 
+}
+.paratha{
+  width: 100%;
+  /* border: #fbfbfb 1px solid; */
+  text-align: center;
   
-  .nav > .nav-links {
-    display: inline;
-    float: right;
-    font-size: 18px;
-  }
-  
-  .nav > .nav-links > a {
-    display: inline-block;
-    padding: 13px 10px 13px 10px;
+}
+
+#main-footer p a {
+    padding-bottom: 40px;
+    font-size: 25px;
     text-decoration: none;
-    color: #efefef;
+}
+
+#main-footer p {
+    text-align: center; 
+}
+
+.social-links {
+    list-style:none;
+    margin:0;
+    padding:0;
+    margin-bottom:30px;
+}
+
+.social-links li{
+    display:inline-block;
+    margin:0 5px;
+    border-radius:3px;
+    box-shadow:0 4px 0 transparent;
+    -webkit-transition:all .3s ease-out;
+    transition:all .3s ease-out;
+}
+
+.social-links li a {
+    display:block;
+    color:rgb(84, 11, 173);
+    font-size:21px;
+    width:50px;
+    height:50px;
+    line-height:50px;
+    text-align:center;
+    background:#ffffff;
+    border-radius:50%;
+    -webkit-transition:all .3s ease-out;
+    transition:all .3s ease-out;
+}
+
+.social-links li a:hover {
+    color:rgb(240, 12, 12);
+    background:#9a3a3a;
+}
+
+
+
+
+
+
+ 
+
+
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
   }
-  
-  .nav > .nav-links > a:hover {
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
     background-color: rgba(0, 0, 0, 0.3);
   }
-  
-  .nav > #nav-check {
-    display: none;
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
   }
 
+  .descri h2{
+    margin-top: 60px;
+    font-size: 24px;
+    width: 60%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   
-  @media (max-width:600px) {
-    .nav > .nav-btn {
-      display: inline-block;
-      position: absolute;
-      right: 0px;
-      top: 0px;
-    }
-    .nav > .nav-btn > label {
-      display: inline-block;
-      width: 50px;
-      height: 50px;
-      padding: 13px;
-    }
-    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-      background-color: rgba(0, 0, 0, 0.3);
-    }
-    .nav > .nav-btn > label > span {
-      display: block;
-      width: 25px;
-      height: 10px;
-      border-top: 2px solid #eee;
-    }
-    .nav > .nav-links {
-      position: absolute;
-      display: block;
-      width: 100%;
-      background-color: #333;
-      height: 0px;
-      transition: all 0.3s ease-in;
-      overflow-y: hidden;
-      top: 50px;
-      left: 0px;
-    }
-    .nav > .nav-links > a {
-      display: block;
-      width: 100%;
-    }
-    .nav > #nav-check:not(:checked) ~ .nav-links {
-      height: 0px;
-    }
-    .nav > #nav-check:checked ~ .nav-links {
-      height: calc(100vh - 50px);
-      overflow-y: auto;
-    }
-  } 
+  }
+
+  .descri h1{
+    margin-top: 10px;
+    font-size: 36px;
+    width: 60%;
+    border: #1a0817 1px solid;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+  }
+
+  .insiste p{
+    font-size: 24px;
+    width: 100%;
+  font-family: 'Times New Roman', Times, serif;
+  }
+
+  .voirplus p{
+    font-size: 24px;
+    width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+  }
+  .generique{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .photo img{
+    border: #1a0817 1px solid;
+    width: 100%;
+    height: 380px;
+  }
+
+  .descri{
+    border: #ff03d5 1px solid;
+    width: 100%;
+    margin-top: -25%;
+
+  }
+  footer {
+    background: rgb(0, 0, 0);
+    height: 150px;
+    color: #ddd;
+    justify-content: center;
+    text-align: center;
+    /* margin: auto; */
+    padding: 45px;
+
+}
+.big-text{
+  font-size:18px;
+  font-weight:200;
+  line-height:62px;
+  color: #000000;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  letter-spacing:0.01em;
+  word-spacing: 0.15em;
+  text-transform:uppercase;
+}
+.paratha p{
+  color: #000000;
+}
+} 
